@@ -1,0 +1,19 @@
+.c-header {
+    background-color: var(--brand__color--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-block-start: 32px solid var(--brand__color--gray-lighter);
+}
+
+.c-header__wrapper {
+    max-width: calc(var(--brand__wrapper--width));
+    padding: 0 var(--brand__wrapper-spacing);
+    flex-grow: 1;
+    display: flex;
+}
+
+.c-header__logo {
+    height: 47px;
+    margin: 15px 0;
+}

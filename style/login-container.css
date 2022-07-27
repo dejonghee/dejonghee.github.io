@@ -1,0 +1,77 @@
+#api {
+    background-color: var(--brand__color--white);
+    border-block-start: 1px solid var(--brand__color--border);
+    padding: 60px;
+    max-width: 650px;
+    margin: 5% auto 0;
+    width: 100%;
+    display: grid;
+    row-gap: 10px;
+}
+@media only screen and (max-width: 670px) {
+    #api {
+      margin: 5% 10px 0;
+      width: calc(100% - 20px);
+    }
+}
+
+#api::before {
+    content: '';
+    background-color: var(--brand__color--light);
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    z-index: -2;
+}
+
+#api::after {
+    content: '';
+    background-color: var(--brand__color--text);
+    opacity: .1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    z-index: -1;
+    clip-path: polygon(100% 109px, 0% 100%, 100% 100%);
+}
+
+#createAccount,
+#forgotPassword {
+    margin-inline-start: 15px;
+}
+
+
+#localAccountForm {
+    display: grid;
+    row-gap: 30px;
+}
+
+.error {
+    color: var(--brand__color--required);
+}
+
+.intro {
+    display: grid;
+    row-gap: 10px;
+}
+
+.entry {
+    display: grid;
+    row-gap: 30px;
+}
+
+.error {
+    display: grid;
+    row-gap: 10px;
+}
+
+.divider {
+    margin: 10px 0;
+    border-block-start: 1px solid var(--brand__color--border);
+    border-block-end: 1px solid var(--brand__color--border);
+}

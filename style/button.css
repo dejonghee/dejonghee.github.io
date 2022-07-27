@@ -1,0 +1,95 @@
+button {
+  font-family: var(--set-brand__button--font-family, var(--brand__button--font-family));
+  font-size: var(--set-brand__button--font-size, var(--brand__button--font-size));
+  font-weight: var(--brand__button--font-weight);
+  font-style: normal;
+  line-height: var(--set-brand__button--line-height, var(--brand__button--line-height));
+  position: var(--brand__button--position, relative);
+  display: var(--brand__button--display, inline-flex);
+  flex-shrink: var(--brand__button--flex-shrink, inherit);
+  visibility: var(--brand__button--visibility, visible);
+  align-items: var(--set-brand__button--align-items, var(--brand__button--align-items, center));
+  justify-content: var(--set-brand__button--justify-content, var(--brand__button--justify-content));
+  min-width: var(--brand__button--min-width, none);
+  min-height: var(--brand__button--min-height, none);
+  width: var(--set-brand__button--width, var(--brand__button--width));
+  height: var(--set-brand__button--height, var(--brand__button--height, auto));
+  background-color: var(--set-brand__button--background-color, var(--brand__button--background-color));
+  text-align: var(--brand__button--text-align);
+  color: var(--set-brand__button--color, var(--brand__button--color));
+  cursor: var(--brand__button--cursor);
+  -webkit-transition: var(--set-brand__button--transition, var(--brand__button--transition));
+  transition: var(--set-brand__button--transition, var(--brand__button--transition));
+  white-space: var(--brand__button--white-space);
+  margin: var(--set-brand__button--margin, var(--set-brand__button--margin-top, var(--brand__button--margin-top)) var(--set-brand__button--margin-right, var(--brand__button--margin-right)) var(--set-brand__button--margin-bottom, var(--brand__button--margin-bottom)) var(--set-brand__button--margin-left, var(--brand__button--margin-left)));
+  padding: var(--set-brand__button--padding-y, var(--brand__button--padding-y)) var(--set-brand__button--padding-x, var(--brand__button--padding-x));
+  padding-bottom: var(--brand__button--padding-bottom, var(--set-brand__button--padding-y, var(--brand__button--padding-y)));
+  padding-left: var(--brand__button--padding-left, var(--set-brand__button--padding-x, var(--brand__button--padding-x)));
+  padding-right: var(--brand__button--padding-right, var(--set-brand__button--padding-x, var(--brand__button--padding-x)));
+  -webkit-text-decoration: var(--brand__button--text-decoration);
+          text-decoration: var(--brand__button--text-decoration);
+  letter-spacing: var(--brand__button--letter-spacing);
+  border-color: var(--set-brand__button--border-color, var(--brand__button--border-color));
+  border-width: var(--set-brand__button--border-width, var(--brand__button--border-width));
+  border-style: var(--brand__button--border-style);
+  border-radius: var(--set-brand__button--border-radius, var(--brand__button--border-radius));
+  outline: var(--brand__button--outline);
+  opacity: var(--brand__button--opacity);
+  text-transform: var(--brand__button--text-transform);
+  transform: var(--set-brand__button--transform, var(--brand__button--transform, none));
+  pointer-events: var(--set-brand__button--pointer-events, var(--brand__button--pointer-events));
+  z-index: var(--brand__button--z-index, inherit);
+  --brand__svg--fill: var(--set-brand__button-svg--fill, var(--brand__button-svg--fill));
+  --brand__svg--transform: var(--set-brand__button-svg--transform, var(--brand__button-svg--transform));
+}
+
+button:hover {
+  --brand__button--border-color: var(--set-brand__button-hover--border-color, var(--brand__button-hover--border-color));
+  --brand__button--background-color: var(--set-brand__button-hover--background-color, var(--brand__button-hover--background-color));
+  --brand__button--color: var(--set-brand__button-hover--color, var(--brand__button-hover--color));
+  --brand__button-svg--fill: var(--set-brand__button-hover--fill, var(--brand__button-hover--fill));
+  --brand__button-svg--transform: var(--set-brand__button-hover-svg--transform, var(--brand__button-hover-svg--transform));
+  --set-brand__link-hover--color: var(--set-brand__button-hover--color, var(--brand__button-hover--color));
+  --set-brand__link-active--color: var(--set-brand__button-active--color, var(--brand__button-active--color));
+  --brand__button--transform: var(--set-brand__button-hover--transform, var(--brand__button-hover--transform, none));
+  --brand__button-after--right: -21px;
+  -webkit-transition: var(--set-brand__button-hover--transition, var(--brand__button--transition));
+  transition: var(--set-brand__button-hover--transition, var(--brand__button--transition));
+}
+
+button:focus {
+  outline: var(--brand__button-focus--outline, none);
+}
+
+button.disabled {
+  --brand__button--opacity: var(--set-brand__button-disabled--opacity, 0.7);
+  --brand__button--cursor: not-allowed;
+  --brand__button--pointer-events: none;
+}
+/* PRIMARY BUTTON STYLING */
+button {
+    --brand__button--color: var(--set-brand__button-primary--color, var(--brand__color--dark));
+    --brand__button--padding-x: 20px;
+    --brand__button--padding-y: var(--set-brand__button-primary--padding-y, 10px);
+    --brand__button--background-color: var(--set-brand__button-primary--background-color, var(--brand__color--primary));
+    --brand__button--border-color: var(--set-brand__button-primary--border-color, var(--brand__color--primary));
+    --brand__button--border-width: 1px;
+    --brand__button--border-radius: 50px;
+    --brand__button-svg--fill: var(--set-brand__button-primary-svg--fill, var(--brand__color--dark));
+  }
+  button:hover {
+    --brand__button-hover--color: var(--set-brand__button-primary-hover--color, var(--brand__color--dark));
+    --brand__button-active--color: var(--set-brand__button-primary-hover--color, var(--brand__color--dark));
+    --brand__button--background-color: var(--set-brand__button-primary-hover--background-color, var(--brand__color--primary-dark));
+    --brand__button-hover--border-color: var(--set-brand__button-primary-hover--border-color, var(--brand__color--primary-dark));
+    --brand__button-hover--fill: var(--set-brand__button-primary-hover-svg--fill, var(--brand__color--dark));
+  }
+  button:focus {
+    outline: var(--brand__button-focus--outline, none);
+  }
+  button:after {
+    --brand__button-after--content: none;
+  }
+  button:last-child {
+    margin-right: var(--brand__button-last-child--margin-right, 0);
+  }
