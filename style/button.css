@@ -83,6 +83,7 @@ button {
     --brand__button--background-color: var(--set-brand__button-primary-hover--background-color, var(--brand__color--primary-dark));
     --brand__button-hover--border-color: var(--set-brand__button-primary-hover--border-color, var(--brand__color--primary-dark));
     --brand__button-hover--fill: var(--set-brand__button-primary-hover-svg--fill, var(--brand__color--dark));
+    cursor: pointer;
   }
   button:focus {
     outline: var(--brand__button-focus--outline, none);

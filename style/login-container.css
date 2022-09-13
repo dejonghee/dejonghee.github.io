@@ -8,6 +8,7 @@
     display: grid;
     row-gap: 10px;
 }
+
 @media only screen and (max-width: 670px) {
     #api {
       margin: 5% 10px 0;
@@ -74,4 +75,36 @@
     margin: 10px 0;
     border-block-start: 1px solid var(--brand__color--border);
     border-block-end: 1px solid var(--brand__color--border);
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+ul {
+    display: grid;
+    row-gap: 20px;
+}
+
+.helpLink {
+    color: var(--brand__color--primary);
+    font-size: var(--brand__font-size--tiny);
+    text-transform: uppercase;
+    --brand__link--border-bottom-width: 0px;
+    display: block;
+    padding-block-start: 7px;
+}
+
+.buttons {
+    margin-block-start: 15px;
+}
+
+.buttons button#cancel,
+.buttons button.sendCode{
+    background-color: var(--brand__color--white);
+    border: 2px solid var(--brand__color--text);
+    padding: 5px 10px;;
 }

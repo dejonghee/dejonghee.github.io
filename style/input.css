@@ -41,6 +41,10 @@ input {
   input[type='checkbox'] label:hover {
     cursor: pointer;
   }
+  input::placeholder {
+    color: var(--brand__color--text);
+    opacity: .3;
+  }
   input[type='checkbox'] label:focus {
     color: var(--brand__input-label-focus--color, currentColor);
   }
@@ -109,7 +113,8 @@ input {
 
   input[type='text'],
   input[type='password'],
-  input[type='email'] {
+  input[type='email'],
+  select {
     border-bottom: 1px solid black;
   }
 
