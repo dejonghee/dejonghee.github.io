@@ -3,7 +3,7 @@
     border-block-start: 1px solid var(--brand__color--border);
     padding: 60px;
     max-width: 650px;
-    margin: 5% auto 0;
+    margin: 30px auto 0;
     width: 100%;
     display: grid;
     row-gap: 10px;
