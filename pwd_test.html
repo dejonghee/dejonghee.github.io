@@ -17,6 +17,7 @@
     const params = new Proxy(new URLSearchParams(window.location.search), {
       get: (searchParams, prop) => searchParams.get(prop)
     });
+	  console.log(parms);
     let hint = params.email;
 	console.log(hint);
 	document.getElementById("email").value = hint;
@@ -24,6 +25,7 @@
   
 </head>
 <body>
+	<h1>Test</h1>
 	<div class="c-header">
 		<div class="c-header__wrapper">
 			<img class="c-header__logo" src="https://dejonghee.github.io/media/logo.svg" />    
