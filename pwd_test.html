@@ -1,40 +1,34 @@
 <html lang="en">
-<head>
-	<title>Login</title>
-
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="https://use.typekit.net/dpq7kfb.css" />
-	<link rel="stylesheet" href="https://dejonghee.github.io/style/normalize.css" />
-	<link rel="stylesheet" href="https://dejonghee.github.io/style/settings.css" />
-	<link rel="stylesheet" href="https://dejonghee.github.io/style/header.css" />
-	<link rel="stylesheet" href="https://dejonghee.github.io/style/input.css" />
-	<link rel="stylesheet" href="https://dejonghee.github.io/style/page.css" />
-	<link rel="stylesheet" href="https://dejonghee.github.io/style/button.css" />
-	<link rel="stylesheet" href="https://dejonghee.github.io/style/login-container.css" />
-    <link rel="stylesheet" href="https://dejonghee.github.io/style/sign-up.css" />
-  
-</head>
-<body>
-	<h1>Test</h1>
-	<div class="c-header">
-		<div class="c-header__wrapper">
-			<img class="c-header__logo" src="https://dejonghee.github.io/media/logo.svg" />    
-		</div>
-	</div>
-
-	<div id="api"></div>
-</body>
-	
-	
-
-  <script>
-    const params = new Proxy(new URLSearchParams(window.location.search), {
-      get: (searchParams, prop) => searchParams.get(prop)
-    });
-	  console.log(params);
-    let hint = params.email;
-	console.log(hint);
-	  console.log(document.getElementById("email");
-	document.getElementById("email").value = hint;
-  </script>
+   <head>
+      <title>Login</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="https://use.typekit.net/dpq7kfb.css" />
+      <link rel="stylesheet" href="https://dejonghee.github.io/style/normalize.css" />
+      <link rel="stylesheet" href="https://dejonghee.github.io/style/settings.css" />
+      <link rel="stylesheet" href="https://dejonghee.github.io/style/header.css" />
+      <link rel="stylesheet" href="https://dejonghee.github.io/style/input.css" />
+      <link rel="stylesheet" href="https://dejonghee.github.io/style/page.css" />
+      <link rel="stylesheet" href="https://dejonghee.github.io/style/button.css" />
+      <link rel="stylesheet" href="https://dejonghee.github.io/style/login-container.css" />
+      <link rel="stylesheet" href="https://dejonghee.github.io/style/sign-up.css" />
+   </head>
+   <body>
+      <h1>Test</h1>
+      <div class="c-header">
+         <div class="c-header__wrapper">
+            <img class="c-header__logo" src="https://dejonghee.github.io/media/logo.svg" />    
+         </div>
+      </div>
+      <div id="api"></div>
+   </body>
+   <script>
+      const params = new Proxy(new URLSearchParams(window.location.search), {
+        get: (searchParams, prop) => searchParams.get(prop)
+      });
+      console.log(params);
+      let hint = params.email;
+      console.log(hint);
+      console.log(document.getElementById("email"));
+      document.getElementById("email").value = hint;
+   </script>
 </html>
