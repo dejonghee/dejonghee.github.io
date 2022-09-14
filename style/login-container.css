@@ -52,6 +52,31 @@
     row-gap: 30px;
 }
 
+#localAccountForm .divider {
+    display: none;
+}
+
+#GoogleExchange::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill-rule='evenodd' clip-rule='evenodd' image-rendering='optimizeQuality' shape-rendering='geometricPrecision' text-rendering='geometricPrecision' viewBox='0 0 640 640'%3E%3Cpath fill='%23FAFAFA' d='M326.33 274.25v109.77h181.5c-7.38 47.11-54.9 138-181.5 138-109.24 0-198.37-90.49-198.37-202 0-111.52 89.13-202 198.37-202 62.13 0 103.76 26.51 127.53 49.36l86.88-83.64C484.99 31.51 412.74 0 326.38 0 149.49-.01 6.37 143.12 6.37 320s143.12 320.01 320 320.01c184.65 0 307.26-129.87 307.26-312.65 0-21-2.24-37-5-53l-302.25-.13-.05.03z'/%3E%3C/svg%3E");
+    margin-inline-end: 10px;
+}
+
+.no_display {
+    display: none
+}
+
+.social h2, .social h3, .social h4, .social h5, .social p {
+    /* font-size: 21px; */
+    color: var(--brand__color--gray-dark);
+}
+
+.social >*:first-child {
+    padding-block-end: 15px;
+}
+
 .error {
     color: var(--brand__color--required);
 }
@@ -63,7 +88,7 @@
 
 .entry {
     display: grid;
-    row-gap: 30px;
+    row-gap: 10px;
 }
 
 .error {
@@ -71,10 +96,21 @@
     row-gap: 10px;
 }
 
+.heading {
+    padding-block-end: 5px;
+}
+
 .divider {
-    margin: 10px 0;
+    margin: 12px 0;
     border-block-start: 1px solid var(--brand__color--border);
     border-block-end: 1px solid var(--brand__color--border);
+    background-color: var(--brand__color--gray-dark);
+}
+.divider h2 {
+    font-size: 21px;
+    font-weight: bold;
+    color: var(--brand__color--white);
+    padding: 2px 10px;
 }
 
 .buttons {
@@ -107,4 +143,20 @@ ul {
     background-color: var(--brand__color--white);
     border: 2px solid var(--brand__color--text);
     padding: 5px 10px;;
+}
+
+.extension_Role_li {
+    display: none
+}
+
+.extension_Verified_li {
+    display: none
+}
+
+.helpLink {
+    display: none
+}
+
+.changeClaims {
+    visibility: hidden;
 }
