@@ -12,16 +12,6 @@
 	<link rel="stylesheet" href="https://dejonghee.github.io/style/button.css" />
 	<link rel="stylesheet" href="https://dejonghee.github.io/style/login-container.css" />
     <link rel="stylesheet" href="https://dejonghee.github.io/style/sign-up.css" />
-
-  <script>
-    const params = new Proxy(new URLSearchParams(window.location.search), {
-      get: (searchParams, prop) => searchParams.get(prop)
-    });
-	  console.log(params);
-    let hint = params.email;
-	console.log(hint);
-	document.getElementById("email").value = hint;
-  </script>
   
 </head>
 <body>
@@ -34,4 +24,17 @@
 
 	<div id="api"></div>
 </body>
+	
+	
+
+  <script>
+    const params = new Proxy(new URLSearchParams(window.location.search), {
+      get: (searchParams, prop) => searchParams.get(prop)
+    });
+	  console.log(params);
+    let hint = params.email;
+	console.log(hint);
+	  console.log(document.getElementById("email");
+	document.getElementById("email").value = hint;
+  </script>
 </html>
