@@ -3,7 +3,7 @@
         <title>Title</title>
         <script>
             function myFunction() {
-                console.log("clickk");
+                console.log("click");
                 let parametersString = document.querySelector("div[data-component-class='Product3DViewerModal']").attributes["data-component-parm"].value;
                 console.log(parametersString);
                 let data = JSON.parse(parametersString);
@@ -13,7 +13,7 @@
                 targetWindow.contentWindow.postMessage({
                     command: "start",
                     parms: data
-                }, 'https://localhost.bla'); // Use target host.
+                }, 'https://we-jor-dev-digital-asphead-web.azurewebsites.net'); // Use target host.
             }
         </script>
     </head>
