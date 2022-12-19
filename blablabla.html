@@ -3,10 +3,13 @@
         <title>Title</title>
         <script>
             function myFunction() {
-                console.log("click");
+                console.log("clickk");
                 let parametersString = document.querySelector("div[data-component-class='Product3DViewerModal']").attributes["data-component-parm"].value;
+                console.log(parametersString);
                 let data = JSON.parse(parametersString);
+                console.log(data);
                 let targetWindow = document.querySelector("iframe");
+                console.log(targetWindow);
                 targetWindow.contentWindow.postMessage({
                     command: "start",
                     parms: data
