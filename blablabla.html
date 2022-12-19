@@ -3,14 +3,14 @@
         <title>Title</title>
         <script>
             function myFunction() {
-                console.log("click");
+                console.log("click---");
                 let parametersString = document.querySelector("div[data-component-class='Product3DViewerModal']").attributes["data-component-parm"].value;
                 let data = JSON.parse(parametersString);
                 let targetWindow = document.querySelector("iframe");
                 targetWindow.contentWindow.postMessage({
                     command: "start",
                     parms: data
-                }, 'https://www.bla.com'); // Use target host.
+                }, 'https://www.bladsdfqqsdfdqsfdsqsdsdqqsdf.com'); // Use target host.
             }
         </script>
     </head>
